@@ -14,14 +14,12 @@ if(cantidadDePartidas > 0){
     for(i = 1; i <= cantidadDePartidas; i++){
         do {
             var desicionPlayer = +prompt(`
-
             Partida nº: ${i}
             Ingrese su opción:
         
             - 1) Piedra
             - 2) Papel
             - 3) Tijera
-        
         `);
         } while (isNaN(desicionPlayer) || desicionPlayer < 1  || desicionPlayer > 3);
         
